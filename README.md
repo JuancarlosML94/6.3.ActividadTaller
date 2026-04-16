@@ -21,3 +21,11 @@ Esto aporta varias ventajas:
 - Facilita añadir nuevos tipos de especialistas en el futuro (por ejemplo, chapistas o electricistas) sin modificar el código existente
 
 En resumen, mejora la mantenibilidad y escalabilidad del sistema.
+
+## UML generado 
+
+Este diagrama ha sido generado automáticamente a partir del código fuente utilizando PlantUML, como parte de la fase de ingeniería inversa.
+
+Nota: GitHub no permite visualizar directamente archivos `.puml`, por lo que te incluyo una captura del diagrama generado para facilitarte la revisión.
+
+<img width="881" height="480" alt="image" src="https://github.com/user-attachments/assets/9ac7f9ba-4dac-456a-88da-d299c5885aa8" />
