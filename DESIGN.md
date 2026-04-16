@@ -70,3 +70,4 @@ Cliente "1" o-- "1..*" Vehiculo : posee
 Vehiculo "1" *-- "0..*" Reparacion : historial
 Especialista <|.. Mecanico
 Taller ..> Mecanico : usa
+```
