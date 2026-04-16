@@ -1,0 +1,56 @@
+@startuml
+
+' ===== CLASES =====
+
+abstract class Vehiculo {
+  -matricula : String
+  -modelo : String
+  -historialReparaciones : List<Reparacion>
+}
+
+class Coche
+class Moto
+
+class Cliente {
+  -nombre : String
+  -vehiculos : List<Vehiculo>
+}
+
+class Reparacion {
+  -descripcion : String
+  -fecha : String
+  -coste : double
+}
+
+interface Especialista {
+  +reparar(reparacion : Reparacion)
+}
+
+class Mecanico {
+  -nombre : String
+}
+
+class Taller {
+  -nombre : String
+}
+
+class Factura {
+  -numero : String
+  -importeTotal : double
+  -reparacion : Reparacion
+}
+
+' ===== RELACIONES =====
+
+Vehiculo <|-- Coche
+Vehiculo <|-- Moto
+
+Cliente "1" o-- "1..*" Vehiculo
+Vehiculo "1" *-- "0..*" Reparacion
+
+Especialista <|.. Mecanico
+
+Taller ..> Mecanico
+Factura --> Reparacion
+
+@enduml
